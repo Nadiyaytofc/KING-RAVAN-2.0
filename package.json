@@ -1,7 +1,7 @@
 {
   "name": "King Ravan 2.0",
   "version": "4",
-  "description": "A Simple WhatsApp bot created By King-Hansaja",
+  "description": "A Simple WhatsApp bot created By King-Nadil-Hansaja",
   "main": "queen.js",
   "scripts": {
     "start": "pm2 start queen.js --deep-monitoring --attach --name King-Ravan-2.0",
