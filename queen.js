@@ -29,7 +29,7 @@ const sess = require("./session");
 async function sessdl() {
   try {
     // Extract the Base64 encoded session data
-    const base64Data = sess.SESSION_ID.split("KING-RAVAN-MD~")[1];
+    const base64Data = sess.SESSION_ID.split("KING-RAVAN-2.0~")[1];
     if (!base64Data) {
       throw new Error("Invalid SESSION_ID format - missing Base64 data");
     }
@@ -119,9 +119,9 @@ async function connectToWA() {
       console.log("connected to whatsapp ✅");
       // Assuming `config` contains all the settings
       let up = `
-          🚀 **© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 𝙼𝙳 💚 Connected Successfully!** ✅ 
+          🚀 **© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0 💚 Connected Successfully!** ✅ 
           
-          --- **🎉 Welcome to © 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 𝙼𝙳 💚!** 🎉 
+          --- **🎉 Welcome to © 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0💚!** 🎉 
           ✦» 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${require("./package.json").version}
           ✦» 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
           ✦» 𝙷𝚘𝚜𝚝 : ${os.hostname()}
@@ -150,7 +150,7 @@ async function connectToWA() {
             config.AUTORECORDING ? "Enabled" : "Disabled"
           }
       
-          --- Thank you for using **© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 𝙼𝙳 💚**. 
+          --- Thank you for using **© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0 💚**. 
           We're here to make your experience enjoyable and seamless. 
           If you need any help or have questions, don't hesitate to ask. 
           
@@ -169,10 +169,10 @@ async function connectToWA() {
             serverMessageId: 999,
           },
           externalAdReply: {
-            title: "© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 𝙼𝙳 💚",
+            title: "© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0 💚",
             body: " ©𝐌𝐑 𝐍𝐀𝐃𝐈𝐋 𝐇𝐀𝐍𝐒𝐀𝐉𝐀💚",
             mediaType: 1,
-            sourceUrl: "https://github.com/Nadiyatofc/",
+            sourceUrl: "https://github.com/Nadiyaytofc/",
             thumbnailUrl:
               "https://raw.githubusercontent.com/RASH-DATA/ANJU-DATA/refs/heads/main/LOGOS/6152181515400889311.jpg", // This should match the image URL provided above
             renderLargerThumbnail: false,
