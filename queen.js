@@ -119,18 +119,19 @@ async function connectToWA() {
       console.log("connected to whatsapp ✅");
       // Assuming `config` contains all the settings
       let up = `
-          🚀 **© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0 💚 Connected Successfully!** ✅ 
+          🚀 *© 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0 💚 Connected Successfully!* ✅ 
           
-          --- **🎉 Welcome to © 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0💚!** 🎉 
+          --- *🎉 Welcome to © 𝙺𝙸𝙽𝙶 𝚁𝙰𝚅𝙰𝙽 2.0💚!* 🎉 
           ✦» 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${require("./package.json").version}
           ✦» 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
           ✦» 𝙷𝚘𝚜𝚝 : ${os.hostname()}
           ✦» 𝙾𝚆𝙽𝙴𝚁: ${config.BOT_NUMBER}
+          ✦» OWNER NO: +94740952053
           
           --- **Current Settings:**
           ✦» **PREFIX:** ${config.PREFIX}
           ✦» **MODE:** ${config.MODE}
-          ✦» **AUTO READ STATUS:** ${
+          ✦» **AUTO READ STATUS:** $
             config.AUTOREADSTATUS ? "Enabled" : "Disabled"
           }
           ✦» **READ CMD:** ${config.READCMD ? "Enabled" : "Disabled"}
@@ -154,7 +155,8 @@ async function connectToWA() {
           We're here to make your experience enjoyable and seamless. 
           If you need any help or have questions, don't hesitate to ask. 
           
-          **Enjoy your time with us!** 😊`;
+          **Enjoy your time with us!**👑
+          > 𝙽𝙰𝙳𝙸𝚈𝙰 𝚢𝚝 𝚘𝚏𝚌👑`;
 
       conn.sendMessage(conn.user.id, {
         text: up,
@@ -174,7 +176,7 @@ async function connectToWA() {
             mediaType: 1,
             sourceUrl: "https://github.com/Nadiyaytofc/",
             thumbnailUrl:
-              "https://raw.githubusercontent.com/RASH-DATA/ANJU-DATA/refs/heads/main/LOGOS/6152181515400889311.jpg", // This should match the image URL provided above
+              "https://files.catbox.moe/zscin7.png", // This should match the image URL provided above
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
@@ -377,8 +379,6 @@ async function connectToWA() {
         command: commandName,
         args,
         q,
-        apikey,
-        baseurl,
         isGroup,
         sender,
         senderNumber,
@@ -401,7 +401,7 @@ async function connectToWA() {
 }
 if (!app) return;
 app.get("/", (req, res) => {
-  res.send("hey I am alive, Queen_Anju Is started✅");
+  res.send("hey I am alive, King Ravan Is started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
